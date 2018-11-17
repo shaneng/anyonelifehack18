@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AiFamily.Page_StartChallenge"
+              NavigationPage.HasNavigationBar="false">
+
+    <RelativeLayout>
+        <Image Source="Challenge_Blank.jpg"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}"></Image>
+
+        <Grid 
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}">
+
+            <StackLayout Orientation="Vertical"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}">
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+                    <Label Text=" "/>
+                </StackLayout>
+                <StackLayout VerticalOptions="CenterAndExpand">
+                    <Label Text="CHALLENGE ACCEPTED!" TextColor="Red" HorizontalOptions="Center" FontAttributes="Bold" FontSize="30" x:Name="Label"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" VerticalOptions="End">
+                    <Label Text=" "/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+
+
+    </RelativeLayout>
+
+
+</ContentPage>

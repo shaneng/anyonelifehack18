@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AiFamily.Page_ChallengeDetail"
+             NavigationPage.HasNavigationBar="false">
+    <RelativeLayout>
+        <Image Source="ChallengeDetail.jpg"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}"></Image>
+
+        <Grid 
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}">
+
+            <StackLayout Orientation="Vertical"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}">
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+                    <Button Text=" " HorizontalOptions="StartAndExpand"  FontSize="Large" x:Name="BackButton" Clicked="BackButton_Clicked"  WidthRequest="100"/>
+                </StackLayout>
+                <StackLayout VerticalOptions="CenterAndExpand">
+                </StackLayout>
+                <StackLayout Orientation="Vertical" VerticalOptions="End">
+                    <Button Text=" " HorizontalOptions="CenterAndExpand" FontSize="Large" x:Name="YesButton" Clicked="YesButton_Clicked" WidthRequest="600"/>
+                    <Label Text=" "/>
+                    <Button Text=" " HorizontalOptions="CenterAndExpand" FontSize="Large" x:Name="NoButton" Clicked="NoButton_Clicked"  WidthRequest="600"/>
+                    <Label Text=" "/>
+                    <Label Text=" "/>
+                    <Label Text=" "/>
+                    <Label Text=" "/>
+                    <Label Text=" "/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </RelativeLayout>
+</ContentPage>

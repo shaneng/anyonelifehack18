@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AiFamily"
+             x:Class="AiFamily.MainPage"
+             NavigationPage.HasNavigationBar="false">
+
+
+        <!-- Place new controls here -->
+        <!--<Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />-->
+
+
+    <RelativeLayout>
+        <Image Source="NewChallenge.jpg"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}"></Image>
+
+        <Grid 
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}">
+
+            <StackLayout Orientation="Vertical"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}">
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+                </StackLayout>
+                <StackLayout VerticalOptions="CenterAndExpand">
+                </StackLayout>
+                <StackLayout Orientation="Vertical" VerticalOptions="End">
+                    <Button Text=" " HorizontalOptions="CenterAndExpand" FontSize="Large" x:Name="YesButton" Clicked="YesButton_Clicked" WidthRequest="600"/>
+                    <Label Text=" "/>
+                    <Label Text=" "/>
+                    <Label Text=" "/>
+                    <Label Text=" "/>
+                    <Label Text=" "/>
+                    <Label Text=" "/>
+                    <Label Text=" "/>
+                </StackLayout>
+            </StackLayout>
+            
+
+        </Grid>
+
+    </RelativeLayout>
+
+
+</ContentPage>

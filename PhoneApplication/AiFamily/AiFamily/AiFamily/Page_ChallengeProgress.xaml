@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AiFamily.Page_ChallengeProgress"
+             NavigationPage.HasNavigationBar="false">
+    <RelativeLayout>
+        <Image Source="ChallengeProgress_blank.jpg"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}"></Image>
+
+        <Grid 
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}">
+
+            <StackLayout Orientation="Vertical"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}">
+                <StackLayout Orientation="Vertical" VerticalOptions="Start">
+                    <Label Text=" "/>
+                    <Label Text=" "/>
+                    <Label Text=" "/>
+                    <Label Text=" "/>
+                    <Label Text=" "/>
+                    <Label Text=" "/>
+                    <Label Text=" "/>
+                    <Label Text=" "/>
+                    <Label Text=" "/>
+                    <Label Text="Label" x:Name="TimeSpent" HorizontalOptions="Center" FontSize="50" FontAttributes="Bold"/>
+                    <Label Text=" "/>
+                </StackLayout>
+                <StackLayout VerticalOptions="CenterAndExpand">
+                </StackLayout>
+                <StackLayout Orientation="Vertical" VerticalOptions="End">
+                    <Label Text=" "/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+
+
+    </RelativeLayout>
+    
+</ContentPage>
