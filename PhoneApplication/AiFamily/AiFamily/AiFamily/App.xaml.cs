@@ -16,7 +16,7 @@ namespace AiFamily
             InitializeComponent();
             MainPage = new NavigationPage(new MainPage());
 
-            CrossLocalNotifications.Current.Show("AIFamily", "Here come the new daily challenge!", 101, DateTime.Now.AddSeconds(5));
+            CrossLocalNotifications.Current.Show("AIFamily", "Here come the new today's challenge!", 101, DateTime.Now.AddSeconds(5));
         }
 
         protected override void OnStart()

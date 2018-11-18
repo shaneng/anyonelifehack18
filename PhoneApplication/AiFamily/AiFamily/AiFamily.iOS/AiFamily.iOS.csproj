@@ -187,4 +187,13 @@
   <ItemGroup>
     <BundleResource Include="go.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="OptionB.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Challange_Finish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Family.jpg" />
+  </ItemGroup>
 </Project>

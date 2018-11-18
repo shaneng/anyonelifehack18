@@ -20,12 +20,15 @@ namespace AiFamily
             endPoint.Headers.Add("Prediction-Key", "0b8a75c791f74000afd451a5c1cc283a");
             endPoint.Headers.Add("Content-Type", "application/octet-stream");
 
+
+
             var output = new MemoryStream();
             image_path.CopyTo(output);
             // endPoint.UploadValuesCompleted += EndPoint_UploadValuesCompleted;
             var data = endPoint.UploadData(new Uri("https://southcentralus.api.cognitive.microsoft.com/customvision/v2.0/Prediction/e3196500-6df5-4639-98ac-627e204cc8b5/image"), output.GetBuffer());
             StreamReader reader = new StreamReader(new MemoryStream(data));
             var result = reader.ReadToEnd();
+
 
             //ResultImage.Source = ImageSource.FromStream(() =>
             //{
@@ -34,13 +37,28 @@ namespace AiFamily
             //}
             //);
 
-            
+            var i = 3;
+
+            Device.StartTimer(TimeSpan.FromSeconds(1), () =>
+            {
+                
+                i--;
+
+                if (i >= 0)
+                    return true;
+                else
+                {
+                    SummaryPage();
+                    return false;
+                }
+            });
+
+
         }
 
-
-        private void EndPoint_UploadValuesCompleted(object sender, UploadValuesCompletedEventArgs e)
+        async void SummaryPage()
         {
-            
+            await Navigation.PushAsync(new Page_Summary());
         }
     }
 }

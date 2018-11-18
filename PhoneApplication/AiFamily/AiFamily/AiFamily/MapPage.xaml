@@ -26,6 +26,7 @@
                     <Label Text=" "/>
                 </StackLayout>
                 <StackLayout VerticalOptions="CenterAndExpand">
+                    <Label Text="Find it in the area specify below!" FontAttributes="Bold" HorizontalOptions="Center"/>
                     <local:CustomMap x:Name="customMap" MapType="Street" WidthRequest="{x:Static local:App.ScreenWidth}" HeightRequest="{x:Static local:App.ScreenHeight}" HorizontalOptions="Center"/>
                     <Label Text=" "/>
                     <Button x:Name="PhotoTakingBtn" Image="go.png" WidthRequest="300" HorizontalOptions="Center"/>

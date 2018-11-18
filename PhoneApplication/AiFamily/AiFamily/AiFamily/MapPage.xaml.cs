@@ -14,13 +14,19 @@ namespace AiFamily
 		{
 			InitializeComponent ();
 
-			customMap.ShapeCoordinates.Add (new Position (37.797513, -122.402058));
-			customMap.ShapeCoordinates.Add (new Position (37.798433, -122.402256));
-			customMap.ShapeCoordinates.Add (new Position (37.798582, -122.401071));
-			customMap.ShapeCoordinates.Add (new Position (37.797658, -122.400888));
+            //customMap.ShapeCoordinates.Add (new Position (37.797513, -122.402058));
+            //customMap.ShapeCoordinates.Add (new Position (37.798433, -122.402256));
+            //customMap.ShapeCoordinates.Add (new Position (37.798582, -122.401071));
+            //customMap.ShapeCoordinates.Add (new Position (37.797658, -122.400888));
 
-			customMap.MoveToRegion (MapSpan.FromCenterAndRadius (new Position (37.79752, -122.40183), Distance.FromMiles (0.1)));
+            customMap.ShapeCoordinates.Add(new Position(22.261740, 114.130485));
+            customMap.ShapeCoordinates.Add(new Position( 22.261224, 114.130485));
+            customMap.ShapeCoordinates.Add(new Position(22.261224, 114.130893));
+            customMap.ShapeCoordinates.Add(new Position(22.261740, 114.130893));
 
+
+            //customMap.MoveToRegion (MapSpan.FromCenterAndRadius (new Position (37.79752, -122.40183), Distance.FromMiles (0.1)));
+            customMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(22.261740, 114.130485), Distance.FromMiles(0.1)));
             
 
             PhotoTakingBtn.Clicked += async (sender, args) =>

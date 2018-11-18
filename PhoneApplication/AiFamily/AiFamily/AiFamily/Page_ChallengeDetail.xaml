@@ -4,7 +4,7 @@
              x:Class="AiFamily.Page_ChallengeDetail"
              NavigationPage.HasNavigationBar="false">
     <RelativeLayout>
-        <Image Source="ChallengeDetail.jpg"
+        <Image Source="OptionB.jpg"
                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}"></Image>
 
