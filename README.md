@@ -1,3 +1,3 @@
 # anyonelifehack18
-* functions - Azure Functions for remote communication
+* custom_vision - Dockerfile from Azure Custom Vision services
 * PhoneApplication - Phone app for demo
