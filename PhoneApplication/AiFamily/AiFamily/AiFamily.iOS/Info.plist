@@ -34,5 +34,15 @@
 	<string>AiFamily</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>AiFamily</string>
+	<key>NSHomeKitUsageDescription</key>
+	<string>New Entry</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This app needs access to the camera to take photos.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app needs access to photos.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>This app needs access to photos.</string>
 </dict>
 </plist>

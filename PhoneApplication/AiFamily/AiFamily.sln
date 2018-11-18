@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiFamily.iOS", "AiFamily\Ai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiFamily.UWP", "AiFamily\AiFamily.UWP\AiFamily.UWP.csproj", "{3CF53E7F-9976-464C-BDFF-4BEB62B45290}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiFamily", "AiFamily\AiFamily\AiFamily.csproj", "{9AD1CC61-406A-47BB-86E4-FA2E00FEED37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AiFamily", "AiFamily\AiFamily\AiFamily.csproj", "{9AD1CC61-406A-47BB-86E4-FA2E00FEED37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

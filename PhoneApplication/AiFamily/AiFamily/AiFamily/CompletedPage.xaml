@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AiFamily.CompletedPage" NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <RelativeLayout>
+            <Image Source="ChallengeList.jpg"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}"></Image>
+            <Grid 
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}">
+
+                <StackLayout Orientation="Vertical"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}">
+
+                    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" >
+                        <Image x:Name="ResultImage" WidthRequest="600"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </RelativeLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

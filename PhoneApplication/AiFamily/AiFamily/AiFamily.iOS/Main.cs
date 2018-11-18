@@ -15,8 +15,8 @@ namespace AiFamily.iOS
         {
             // if you want to use a different Application Delegate class from "AppDelegate"
             // you can specify it here.
-            UIApplication.Main(args, null, "AppDelegate");
 
+            UIApplication.Main(args, null, "AppDelegate");
         }
 
         public void StartTimer(TimeSpan interval, Func<bool> callback)
@@ -30,18 +30,6 @@ namespace AiFamily.iOS
         }
 
 
-        public void GetSteps()
-        {
-            var healthKitStore = new HKHealthStore();
-            var stepRateType = HKQuantityType.Create(HKQuantityTypeIdentifier.StepCount);
-            var sort = new NSSortDescriptor(HKSample.SortIdentifierStartDate, true);
-            var q = new HKSampleQuery(stepRateType, HKQuery.GetPredicateForSamples(NSDate.Now.AddSeconds(TimeSpan.FromDays(-365).TotalSeconds), NSDate.Now.AddSeconds(TimeSpan.FromDays(1).TotalSeconds), HKQueryOptions.None), 0, new NSSortDescriptor[] { },
-                new HKSampleQueryResultsHandler((HKSampleQuery query2, HKSample[] results, NSError error2) =>
-                {
-                    var query = results; //property created within the model to expose later.
-                }));
-            healthKitStore.ExecuteQuery(q);
-        }
 
     }
 }

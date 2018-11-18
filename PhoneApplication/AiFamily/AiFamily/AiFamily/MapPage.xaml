@@ -1,12 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AiFamily.Page_ChallengeProgress"
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 xmlns:local="clr-namespace:AiFamily;assembly=AiFamily"
+			 x:Class="AiFamily.MapPage"
              NavigationPage.HasNavigationBar="false">
-
-
+	<!--<ContentPage.Content>
+		<local:CustomMap x:Name="customMap" MapType="Street" WidthRequest="{x:Static local:App.ScreenWidth}" HeightRequest="{x:Static local:App.ScreenHeight}" />
+	</ContentPage.Content>-->
     <RelativeLayout>
-        <Image Source="ChallengeProgress_blank.jpg"
+        <Image Source="Challenge_Blank.jpg"
                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}"></Image>
 
@@ -17,26 +19,20 @@
             <StackLayout Orientation="Vertical"
             RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}">
                 <StackLayout Orientation="Vertical" VerticalOptions="Start">
-                    <Label Text=" "/>
-                    <Label Text=" "/>
-                    <Label Text=" "/>
-                    <Label Text=" "/>
-                    <Label Text=" "/>
-                    <Label Text=" "/>
+                    <Button Text=" " HorizontalOptions="StartAndExpand"  FontSize="Large" x:Name="BackButton"  WidthRequest="100" Clicked="BackButton_Clicked"/>
                     <Label Text=" "/>
                     <Label Text=" "/>
                     <Label Text=" "/>
                     <Label Text=" "/>
                 </StackLayout>
                 <StackLayout VerticalOptions="CenterAndExpand">
-                </StackLayout>
-                <StackLayout Orientation="Vertical" VerticalOptions="End">
+                    <local:CustomMap x:Name="customMap" MapType="Street" WidthRequest="{x:Static local:App.ScreenWidth}" HeightRequest="{x:Static local:App.ScreenHeight}" HorizontalOptions="Center"/>
                     <Label Text=" "/>
+                    <Button x:Name="PhotoTakingBtn" Image="go.png" WidthRequest="300" HorizontalOptions="Center"/>
                 </StackLayout>
             </StackLayout>
         </Grid>
-
-
     </RelativeLayout>
-    
+
+
 </ContentPage>

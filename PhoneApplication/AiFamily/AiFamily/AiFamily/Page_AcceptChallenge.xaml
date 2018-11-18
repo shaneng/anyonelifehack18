@@ -4,28 +4,29 @@
              x:Class="AiFamily.Page_AcceptChallenge"
              NavigationPage.HasNavigationBar="false">
     <RelativeLayout>
-        <Image Source="ChallengeList.jpg"
+            <Image Source="ChallengeList.jpg"
                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}"></Image>
-
-        <Grid 
+            <Grid 
                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}">
 
-            <StackLayout Orientation="Vertical"
+                <StackLayout Orientation="Vertical"
             RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}">
 
-                <StackLayout Orientation="Vertical" VerticalOptions="Start">
-                    <Button Text=" " HorizontalOptions="StartAndExpand"  FontSize="Large" x:Name="BackButton" Clicked="BackButton_Clicked"  WidthRequest="100"/>
-                    <Label Text=" "/>
-                    <Label Text=" "/>
-                    <Label Text=" "/>
-                    <Label Text=" "/>
-                    <Button Text=" " HorizontalOptions="CenterAndExpand" FontSize="Large" x:Name="ChallengeAcceptedButton" Clicked="ChallengeAcceptedButton_Clicked" WidthRequest="600" HeightRequest="200"/>
+                    <StackLayout Orientation="Vertical" VerticalOptions="Start">
+                        <Button Text=" " HorizontalOptions="StartAndExpand"  FontSize="Large" x:Name="BackButton" Clicked="BackButton_Clicked"  WidthRequest="100"/>
+                        <Label Text=" "/>
+                        <Label Text=" "/>
+                        <Label Text=" "/>
+                        <Label Text=" "/>
+                        <Label Text=" "/>
+                        <Label Text=" "/>
+                        <Label Text=" "/>
+                        <Label Text=" "/>
+                        <Button Text=" " HorizontalOptions="CenterAndExpand" FontSize="Large" x:Name="ChallengeAcceptedButton" Clicked="ChallengeAcceptedButton_Clicked" WidthRequest="600" HeightRequest="200"/>
+                    </StackLayout>
                 </StackLayout>
-            </StackLayout>
-
-
-        </Grid>
-    </RelativeLayout>
+            </Grid>
+        </RelativeLayout>
 </ContentPage>

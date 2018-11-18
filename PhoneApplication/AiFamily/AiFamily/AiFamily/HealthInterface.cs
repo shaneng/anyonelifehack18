@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace StepsCounterApp
+namespace AiFamily
 {
     public interface IHealthData
     {

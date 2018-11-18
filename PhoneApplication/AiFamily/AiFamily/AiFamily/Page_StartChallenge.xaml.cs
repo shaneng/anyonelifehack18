@@ -48,7 +48,8 @@ namespace AiFamily
         async void StartWorkOut()
         {
             DelayTask();
-            await Navigation.PushAsync(new Page_ChallengeProgress());
+            //await Navigation.PushAsync(new Page_ChallengeProgress());
+            await Navigation.PushAsync(new MapPage());
         }
     }
 }
